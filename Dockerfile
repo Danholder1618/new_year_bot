@@ -1,6 +1,6 @@
+
 # Use the official Python image
 FROM python:3.10-slim
-
 
 # Copy the requirements file
 COPY requirements.txt /requirements.txt
@@ -9,7 +9,7 @@ COPY requirements.txt /requirements.txt
 RUN pip install --no-cache-dir -r /requirements.txt
 
 # Copy the bot script and images
-COPY .
+COPY . .
 
 # Set the command to run the bot
 CMD ["python", "bot.py"]

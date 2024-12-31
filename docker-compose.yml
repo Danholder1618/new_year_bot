@@ -6,6 +6,6 @@ services:
     container_name: telegram_bot
     restart: unless-stopped
     volumes:
-      - ./images
+      - ./images:/images
     environment:
       - BOT_TOKEN=8133212885:AAGyXSXVM5I3tSpBFz5nCnaUXUyHqnDNlmg
